@@ -9,7 +9,12 @@ const element = React.createElement('div', {
   children: [elem1, '', 'World!!'],
 });
 
-console.log(element);
+const jsxElement = (
+  <div a={5} b={10}>
+    Hello World!!
+  </div>
+);
+console.log('🚀 ~ jsxElement', jsxElement);
 
 ReactDom.render(element, document.querySelector('#root'));
 
