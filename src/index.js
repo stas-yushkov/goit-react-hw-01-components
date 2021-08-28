@@ -1,3 +1,16 @@
+import React from 'react';
+import ReactDom from 'react-dom';
+
+const element = React.createElement('div', {
+  a: 5,
+  b: 10,
+  children: ['Hello', ' ', 'World!!'],
+});
+
+console.log(element);
+
+ReactDom.render(element, document.querySelector('#root'));
+
 // import React from 'react';
 // import ReactDOM from 'react-dom';
 // import './index.css';
