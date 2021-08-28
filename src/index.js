@@ -1,16 +1,32 @@
 import ReactDom from 'react-dom';
 
-const elem1 = <span>Hello</span>;
-const elem2 = <span>World</span>;
+const data = {
+  id: 'id-1',
+  url: 'https://cdn.pixabay.com/photo/2017/07/31/22/05/feathers-2561511_1280.jpg',
+  title: 'Feathers. Art abstract',
+  price: 500,
+  author: {
+    tag: 'ractapopulous',
+    url: 'https://pixabay.com/users/ractapopulous-24766/',
+  },
+  quantity: 10,
+};
 
-const jsxElement = (
-  <div a={5} b={10}>
-    {elem1} {elem2}!!
+const Painting = (
+  // Компонент Painting
+  <div>
+    <img src={data.url} alt={data.title} width="480" />
+    <h2>{data.title}</h2>
+    <p>
+      Автор: <a href={data.author.url}>{data.author.tag}</a>
+    </p>
+    <p>Цена: {data.price} кредитов</p>
+    <p>Доступность: заканчивается или есть в наличии</p>
+    <button type="button">Добавить в корзину</button>
   </div>
 );
-console.log('🚀 ~ jsxElement', jsxElement);
 
-ReactDom.render(jsxElement, document.querySelector('#root'));
+ReactDom.render(Painting, document.querySelector('#root'));
 
 // import React from 'react';
 // import ReactDOM from 'react-dom';
