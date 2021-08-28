@@ -1,9 +1,12 @@
 import React from 'react';
 import ReactDom from 'react-dom';
 
+const elem1 = <span>Hello</span>;
+const elem2 = <span>World</span>;
+
 const jsxElement = (
   <div a={5} b={10}>
-    Hello World!!
+    {elem1} {elem2}!!
   </div>
 );
 console.log('🚀 ~ jsxElement', jsxElement);
