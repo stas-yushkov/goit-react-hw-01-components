@@ -1,14 +1,6 @@
 import React from 'react';
 import ReactDom from 'react-dom';
 
-const elem1 = React.createElement('span', { children: 'Hello' });
-
-const element = React.createElement('div', {
-  a: 5,
-  b: 10,
-  children: [elem1, '', 'World!!'],
-});
-
 const jsxElement = (
   <div a={5} b={10}>
     Hello World!!
@@ -16,7 +8,7 @@ const jsxElement = (
 );
 console.log('🚀 ~ jsxElement', jsxElement);
 
-ReactDom.render(element, document.querySelector('#root'));
+ReactDom.render(jsxElement, document.querySelector('#root'));
 
 // import React from 'react';
 // import ReactDOM from 'react-dom';
