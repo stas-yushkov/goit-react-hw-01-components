@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDom from 'react-dom';
 
-const elem1 = React.cloneElement('span');
+const elem1 = React.createElement('span', { children: 'Hello' });
 
 const element = React.createElement('div', {
   a: 5,
   b: 10,
-  children: ['Hello', ' ', 'World!!'],
+  children: [elem1, '', 'World!!'],
 });
 
 console.log(element);
