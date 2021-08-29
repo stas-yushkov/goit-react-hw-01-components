@@ -2,45 +2,33 @@ import ReactDom from 'react-dom';
 
 import paintingList from './paintings.json';
 
-const data1 = paintingList[0];
-const data2 = paintingList[1];
+const painting = paintingList[0];
 
-const Painting1 = (
-  // Компонент Painting
-  <div>
-    <img src={data1.url} alt={data1.title} width="480" />
-    <h2>{data1.title}</h2>
-    <p>
-      Автор: <a href={data1.author.url}>{data1.author.tag}</a>
-    </p>
-    <p>Цена: {data1.price} кредитов</p>
-    <p>Доступность: заканчивается или есть в наличии</p>
-    <button type="button">Добавить в корзину</button>
-  </div>
+function Painting(props) {
+  return (
+    <div>
+      <img src={props.url} alt={props.title} width="480" />
+      <h2>{props.title}</h2>
+      <p>
+        Автор: <a href={props.authorUrl}>{props.authorName}</a>
+      </p>
+      <p>Цена: {props.price} кредитов</p>
+      <p>Доступность: заканчивается или есть в наличии</p>
+      <button type="button">Добавить в корзину</button>
+    </div>
+  );
+}
+
+ReactDom.render(
+  <Painting
+    url={painting.url}
+    title={painting.title}
+    authorName={painting.author.tag}
+    authorUrl={painting.author.url}
+    price={painting.price}
+  />,
+  document.querySelector('#root'),
 );
-
-const Painting2 = (
-  // Компонент Painting
-  <div>
-    <img src={data2.url} alt={data2.title} width="480" />
-    <h2>{data2.title}</h2>
-    <p>
-      Автор: <a href={data2.author.url}>{data2.author.tag}</a>
-    </p>
-    <p>Цена: {data2.price} кредитов</p>
-    <p>Доступность: заканчивается или есть в наличии</p>
-    <button type="button">Добавить в корзину</button>
-  </div>
-);
-
-const els = (
-  <div>
-    {Painting1}
-    {Painting2}
-  </div>
-);
-
-ReactDom.render(els, document.querySelector('#root'));
 
 // import React from 'react';
 // import ReactDOM from 'react-dom';
