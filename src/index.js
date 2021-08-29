@@ -2,7 +2,7 @@ import ReactDom from 'react-dom';
 
 import paintingList from './paintings.json';
 
-const painting = paintingList[0];
+const painting = paintingList[1];
 
 function Painting(props) {
   return (
