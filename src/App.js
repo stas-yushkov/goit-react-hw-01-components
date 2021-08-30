@@ -1,8 +1,21 @@
 import { Component } from 'react';
+import Profile from './components/Profile';
+
+import { name, tag, location, avatar, stats } from './user.json';
 
 class App extends Component {
   render() {
-    return <>Hello, world</>;
+    return (
+      <>
+        <Profile
+          name={name}
+          tag={tag}
+          location={location}
+          avatar={avatar}
+          stats={stats}
+        />
+      </>
+    );
   }
 }
 
