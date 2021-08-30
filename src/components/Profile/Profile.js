@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import css from './profile.module.css';
 
 function Profile({
@@ -35,5 +36,13 @@ function Profile({
     </div>
   );
 }
+
+Profile.propTypes = {
+  name: PropTypes.string,
+  // tag,
+  // location,
+  // avatar,
+  // stats: { followers, views, likes },
+};
 
 export default Profile;
