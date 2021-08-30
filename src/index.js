@@ -30,6 +30,8 @@ ReactDom.render(
   document.querySelector('#root'),
 );
 
+// https://youtu.be/kfX5HTQD26E?t=3023
+
 // import React from 'react';
 // import ReactDOM from 'react-dom';
 // import './index.css';
