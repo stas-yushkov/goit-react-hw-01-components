@@ -1,6 +1,7 @@
+import PropTypes from 'prop-types';
 import defaultImage from '../default.jpg';
 
-export default function Painting(props) {
+function Painting(props) {
   const {
     price,
     authorName,
@@ -21,3 +22,13 @@ export default function Painting(props) {
     </div>
   );
 }
+
+Painting.propTypes = {
+  price: PropTypes.number.isRequired,
+  authorName: PropTypes.string.isRequired,
+  authorUrl: PropTypes.string.isRequired,
+  imageUrl: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+};
+
+export default Painting;
