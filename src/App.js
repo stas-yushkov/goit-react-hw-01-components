@@ -7,7 +7,7 @@ export default function App() {
       {paintingList.map(painting => {
         return (
           <Painting
-            key={painting.title}
+            key={painting.id}
             imageUrl={painting.url}
             title={painting.title}
             authorName={painting.author.tag}
