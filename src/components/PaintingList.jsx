@@ -7,14 +7,7 @@ function PaintingList({ items }) {
       {items.map(item => {
         return (
           <li key={item.id}>
-            <Painting
-              imageUrl={item.url}
-              title={item.title}
-              authorName={item.author.tag}
-              authorUrl={item.author.url}
-              price={item.price}
-              quantity={item.quantity}
-            />
+            <Painting {...item} />
           </li>
         );
       })}
@@ -31,3 +24,9 @@ PaintingList.propTypes = {
 };
 
 export default PaintingList;
+
+// url={item.url}
+// title={item.title}
+// author={item.author}
+// price={item.price}
+// quantity={item.quantity}
