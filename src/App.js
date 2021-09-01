@@ -1,5 +1,5 @@
 import { Component } from 'react';
-import Profile from './components/Profile';
+import Profile from 'components/Profile';
 import './css/common.css';
 
 import { name, tag, location, avatar, stats } from './user.json';
