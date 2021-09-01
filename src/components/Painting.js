@@ -2,13 +2,20 @@ import PropTypes from 'prop-types';
 import defaultImage from '../default.jpg';
 
 function Painting(props) {
-  const { price, author, url = defaultImage, title, quantity } = props;
+  const {
+    price,
+    authorName,
+    authorUrl,
+    imageUrl = defaultImage,
+    title,
+    quantity,
+  } = props;
   return (
     <div>
-      <img src={url} alt={title} width="480" />
+      <img src={imageUrl} alt={title} width="480" />
       <h2>{title}</h2>
       <p>
-        Автор: <a href={author.url}>{author.tag}</a>
+        Автор: <a href={authorUrl}>{authorName}</a>
       </p>
       <p>Цена: {price} кредитов</p>
       <p>Доступность: {quantity < 10 ? 'заканчивается' : 'есть в наличии'}</p>
