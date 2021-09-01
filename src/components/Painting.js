@@ -8,6 +8,7 @@ function Painting(props) {
     authorUrl,
     imageUrl = defaultImage,
     title,
+    quantity,
   } = props;
   return (
     <div>
@@ -17,7 +18,7 @@ function Painting(props) {
         Автор: <a href={authorUrl}>{authorName}</a>
       </p>
       <p>Цена: {price} кредитов</p>
-      <p>Доступность: заканчивается или есть в наличии</p>
+      <p>Доступность: {quantity < 10 ? 'заканчивается' : 'есть в наличии'}</p>
       <button type="button">Добавить в корзину</button>
     </div>
   );
@@ -29,6 +30,7 @@ Painting.propTypes = {
   authorUrl: PropTypes.string.isRequired,
   imageUrl: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
+  quantity: PropTypes.number.isRequired,
 };
 
 export default Painting;
