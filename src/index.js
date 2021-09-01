@@ -5,14 +5,15 @@ import paintingList from './paintings.json';
 const painting = paintingList[1];
 
 function Painting(props) {
+  const { price, authorName, authorUrl, url, title } = props;
   return (
     <div>
-      <img src={props.url} alt={props.title} width="480" />
-      <h2>{props.title}</h2>
+      <img src={url} alt={title} width="480" />
+      <h2>{title}</h2>
       <p>
-        Автор: <a href={props.authorUrl}>{props.authorName}</a>
+        Автор: <a href={authorUrl}>{authorName}</a>
       </p>
-      <p>Цена: {props.price} кредитов</p>
+      <p>Цена: {price} кредитов</p>
       <p>Доступность: заканчивается или есть в наличии</p>
       <button type="button">Добавить в корзину</button>
     </div>
