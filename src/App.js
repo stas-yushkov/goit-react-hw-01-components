@@ -1,22 +1,10 @@
-import paintingList from './paintings.json';
-import Painting from './components/Painting';
+import paintings from './paintings.json';
+import PaintingList from './components/PaintingList';
 
 export default function App() {
   return (
     <>
-      {paintingList.map(painting => {
-        return (
-          <Painting
-            key={painting.id}
-            imageUrl={painting.url}
-            title={painting.title}
-            authorName={painting.author.tag}
-            authorUrl={painting.author.url}
-            price={painting.price}
-            quantity={painting.quantity}
-          />
-        );
-      })}
+      <PaintingList items={paintings} />
     </>
   );
 }
