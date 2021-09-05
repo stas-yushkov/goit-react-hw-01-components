@@ -2,9 +2,9 @@
 // import PaintingList from 'components/PaintingList';
 // import ColorPicker from 'components/ColorPicker';
 // import options from './colorPickerOptions.json';
-import Section from 'components/Section';
+// import Section from 'components/Section';
 import Container from 'components/Container';
-import Alert from 'components/Alert/Alert';
+// import Alert from 'components/Alert/Alert';
 import Box from 'components/Box';
 
 export default function App() {
@@ -22,8 +22,8 @@ export default function App() {
       {/* <Alert text="Error!!!!!!" type="error" /> */}
       <Container>
         <Box />
-        <Box type="small" bgColor="red" />
-        <Box type="medium" />
+        <Box type="small" classNames="big red" />
+        {/* <Box type="medium" /> */}
         <Box type="large" />
       </Container>
     </>

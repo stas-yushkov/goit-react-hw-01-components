@@ -21,3 +21,12 @@ img {
 li {
   list-style: none;
 }
+
+.box .big {
+  width: 500px;
+  height: 500px;
+}
+
+.box .red {
+  background-color: red;
+}
