@@ -1,9 +1,10 @@
 import css from './Alert.module.css';
 import PropTypes from 'prop-types';
 
-function Alert({ text, type = 'success' }) {
+function Alert({ text, type }) {
+  const typeClass = type ? css[type] : '';
   return (
-    <p role="alert" className={css[type]}>
+    <p role="alert" className={`${css.alert} ${typeClass}`.trim()}>
       {text}
     </p>
   );
