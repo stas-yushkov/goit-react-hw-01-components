@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 function Alert({ text, type }) {
   return (
-    <p role="alert" className={`${css.alert} ${css[type]}`.trim()}>
+    <p role="alert" className={css[type]}>
       {text}
     </p>
   );

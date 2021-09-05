@@ -7,15 +7,18 @@
 
 .error {
   composes: alert;
+
   background-color: red;
 }
 
 .warning {
   composes: alert;
+
   background-color: orange;
 }
 
 .success {
   composes: alert;
+
   background-color: green;
 }
