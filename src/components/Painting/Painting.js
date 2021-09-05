@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import './Painting.css';
+import css from './Painting.module.css';
 import defaultImage from './default.jpg';
 
 function Painting(props) {
@@ -12,7 +12,7 @@ function Painting(props) {
     quantity,
   } = props;
   return (
-    <div className="Painting">
+    <div className={css.container}>
       <img src={imageUrl} alt={title} width="480" />
       <h2>{title}</h2>
       <p>

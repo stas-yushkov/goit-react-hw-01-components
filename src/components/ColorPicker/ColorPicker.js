@@ -1,18 +1,15 @@
-//
-//
+import css from './ColorPicker.module.css';
 function ColorPicker({ options }) {
   return (
-    <div className="ColorPicker">
-      <h2 className="ColorPicker__title">Color Picker</h2>
+    <div className={css.container}>
+      <h2 className={css.title}>Color Picker</h2>
       <div>
         {options.map(({ label, color }) => (
           <span
             key={label}
-            className="ColorPicker__option"
+            className={css.option}
             style={{ backgroundColor: color }}
-          >
-            {label}
-          </span>
+          ></span>
         ))}
       </div>
     </div>
