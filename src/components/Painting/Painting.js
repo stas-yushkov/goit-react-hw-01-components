@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import './Painting.css';
-import defaultImage from '../default.jpg';
+import defaultImage from './default.jpg';
 
 function Painting(props) {
   const {
