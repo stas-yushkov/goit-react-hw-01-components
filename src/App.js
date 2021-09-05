@@ -1,8 +1,9 @@
-import paintings from './paintings.json';
-import PaintingList from 'components/PaintingList';
-import ColorPicker from 'components/ColorPicker';
-import options from './colorPickerOptions.json';
+// import paintings from './paintings.json';
+// import PaintingList from 'components/PaintingList';
+// import ColorPicker from 'components/ColorPicker';
+// import options from './colorPickerOptions.json';
 import Section from 'components/Section';
+import Alert from 'components/Alert/Alert';
 
 export default function App() {
   return (
@@ -10,8 +11,9 @@ export default function App() {
       <h1>Hello</h1>
 
       <Section title="Топ недели">
-        <ColorPicker options={options} />
-        <PaintingList items={paintings} />
+        {/* <ColorPicker options={options} /> */}
+        {/* <PaintingList items={paintings} /> */}
+        <Alert text="qweqwe" />
       </Section>
     </>
   );
