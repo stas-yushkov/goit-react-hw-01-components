@@ -9,9 +9,9 @@ function Alert({ text, type }) {
   );
 }
 
-Alert.defaultProps = {
-  type: 'success',
-};
+// Alert.defaultProps = {
+//   type: 'success',
+// };
 
 Alert.propTypes = {
   text: PropTypes.string.isRequired,

@@ -13,7 +13,6 @@ export default function App() {
       <Section title="Топ недели">
         {/* <ColorPicker options={options} /> */}
         {/* <PaintingList items={paintings} /> */}
-        <Alert text="Standard" />
         <Alert text="Success!!!!!!" type="success" />
         <Alert text="Warning!!!!!!" type="warning" />
         <Alert text="Error!!!!!!" type="error" />
