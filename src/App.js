@@ -3,6 +3,7 @@
 // import ColorPicker from 'components/ColorPicker';
 // import options from './colorPickerOptions.json';
 import Section from 'components/Section';
+import Container from 'components/Container';
 import Alert from 'components/Alert/Alert';
 
 export default function App() {
@@ -13,9 +14,11 @@ export default function App() {
       <Section title="Топ недели">
         {/* <ColorPicker options={options} /> */}
         {/* <PaintingList items={paintings} /> */}
-        <Alert text="Success!!!!!!" type="success" />
-        <Alert text="Warning!!!!!!" type="warning" />
-        <Alert text="Error!!!!!!" type="error" />
+        <Container>
+          <Alert text="Success!!!!!!" type="success" />
+          <Alert text="Warning!!!!!!" type="warning" />
+          <Alert text="Error!!!!!!" type="error" />
+        </Container>
       </Section>
     </>
   );

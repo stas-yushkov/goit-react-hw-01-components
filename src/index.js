@@ -12,4 +12,4 @@ ReactDom.render(
   document.querySelector('#root'),
 );
 
-// https://youtu.be/qVTTrMo7dMM?t=2283
+// https://youtu.be/qVTTrMo7dMM?t=6726
