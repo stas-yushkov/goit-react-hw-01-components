@@ -2,17 +2,20 @@ import css from './Alert.module.css';
 import PropTypes from 'prop-types';
 
 function Alert({ text, type }) {
-  const typeClass = type ? css[type] : '';
   return (
-    <p role="alert" className={`${css.alert} ${typeClass}`.trim()}>
+    <p role="alert" className={`${css.alert} ${css[type]}`.trim()}>
       {text}
     </p>
   );
 }
 
+Alert.defaultProps = {
+  type: 'success',
+};
+
 Alert.propTypes = {
   text: PropTypes.string.isRequired,
-  name: PropTypes.oneOf(['error', 'warning', 'success']),
+  type: PropTypes.oneOf(['error', 'warning', 'success']).isRequired,
 };
 
 export default Alert;
