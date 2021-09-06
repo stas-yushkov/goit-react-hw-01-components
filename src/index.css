@@ -22,11 +22,11 @@ li {
   list-style: none;
 }
 
-.box .big {
+#root .big {
   width: 500px;
   height: 500px;
 }
 
-.box .red {
+#root .red {
   background-color: red;
 }
