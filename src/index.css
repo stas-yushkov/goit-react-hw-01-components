@@ -23,10 +23,12 @@ li {
 }
 
 #root .big {
-  width: 500px;
-  height: 500px;
+  width: 200px;
+  height: 200px;
+
+  margin-bottom: 100px;
 }
 
 #root .red {
-  background-color: red;
+  background-color: rgb(181, 79, 79);
 }
