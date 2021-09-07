@@ -25,7 +25,9 @@ li {
 #root .big {
   width: 200px;
   height: 200px;
+}
 
+.mb100 {
   margin-bottom: 100px;
 }
 

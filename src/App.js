@@ -22,7 +22,11 @@ export default function App() {
       {/* <Alert text="Error!!!!!!" type="error" /> */}
       <Container>
         <Box />
-        <Box type="small" classNames="big red" styles={{ color: '#fff' }} />
+        <Box
+          type="small"
+          classNames="big red mb100"
+          styles={{ color: '#fff' }}
+        />
         {/* <Box type="medium" /> */}
         <Box type="large" />
       </Container>
