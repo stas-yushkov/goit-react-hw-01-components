@@ -19,6 +19,10 @@ function FriendList({ friends }) {
   );
 }
 
+FriendList.defaultProps = {
+  avatar: 'https://placeimg.com/48/48/people/grayscale',
+};
+
 FriendList.propTypes = {
   friends: PropTypes.arrayOf(
     PropTypes.exact({

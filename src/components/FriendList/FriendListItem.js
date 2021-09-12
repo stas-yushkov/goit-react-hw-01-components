@@ -1,10 +1,15 @@
+import ListItem from './ListItem.styled';
+import RoundBlob from './RoundBlob.styled';
+import UserImage from './UserImage.styled';
+import UserName from './UserName.styled';
+
 function FriendListItem({ avatar, name, isOnline }) {
   return (
-    <li className="item">
-      <span className="status">{isOnline}</span>
-      <img className="avatar" src={avatar} alt={name} width="48" />
-      <p className="name">{name}</p>
-    </li>
+    <ListItem className="item">
+      <RoundBlob className="status" isOnline={isOnline} />
+      <UserImage className="avatar" src={avatar} alt={name} width="48" />
+      <UserName className="name">{name}</UserName>
+    </ListItem>
   );
 }
 
