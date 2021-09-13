@@ -2,6 +2,7 @@ import { name, tag, location, avatar, stats } from './data/user.json';
 import statisticalData from './data/statistical-data.json';
 import friends from './data/friends.json';
 
+import Container from 'components/Container';
 import Profile from 'components/Profile';
 import Statistics from 'components/Statistics';
 import FriendList from 'components/FriendList';
@@ -10,7 +11,7 @@ import './css/common.css';
 
 function App() {
   return (
-    <>
+    <Container>
       <FriendList friends={friends} />
       <Statistics title={'upload stats'} stats={statisticalData} />
       <Statistics stats={statisticalData} />
@@ -21,7 +22,7 @@ function App() {
         avatar={avatar}
         stats={stats}
       />
-    </>
+    </Container>
   );
 }
 
