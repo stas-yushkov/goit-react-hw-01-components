@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import css from './Statistics.module.css';
+import s from './Statistics.module.css';
 
 function Statistics({ title, stats }) {
   const makeColor = value => {
@@ -10,18 +10,18 @@ function Statistics({ title, stats }) {
   };
 
   return (
-    <section className={css.statistics}>
-      {title && <h2 className={css.title}>{title.toUpperCase()}</h2>}
+    <section className={s.statistics}>
+      {title && <h2 className={s.title}>{title.toUpperCase()}</h2>}
 
-      <ul className={css.statList}>
+      <ul className={s.statList}>
         {stats.map(({ id, label, percentage }) => (
           <li
             key={id}
-            className={css.item}
+            className={s.item}
             style={{ backgroundColor: makeColor(percentage) }}
           >
-            <span className={css.label}>{label}</span>
-            <span className={css.percentage}>{percentage}%</span>
+            <span className={s.label}>{label}</span>
+            <span className={s.percentage}>{percentage}%</span>
           </li>
         ))}
       </ul>
