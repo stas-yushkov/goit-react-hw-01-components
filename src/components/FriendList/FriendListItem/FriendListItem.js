@@ -1,7 +1,9 @@
-import ListItem from './ListItem.styled';
-import RoundBlob from './RoundBlob.styled';
-import UserImage from './UserImage.styled';
-import UserName from './UserName.styled';
+import {
+  ListItem,
+  RoundBlob,
+  UserImage,
+  UserName,
+} from './FriendListItem.styled.jsx';
 
 function FriendListItem({ avatar, name, isOnline }) {
   return (

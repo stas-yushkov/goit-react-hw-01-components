@@ -1,10 +1,10 @@
 import PropTypes from 'prop-types';
 import FriendListItem from './FriendListItem';
-import s from './FriendList.module.css';
+import { List } from './FriendList.styled.jsx';
 
 function FriendList({ friends }) {
   return (
-    <ul className={s.friendList}>
+    <List className="friendList">
       {friends.map(({ avatar, name, isOnline, id }) => (
         <FriendListItem
           key={id}
@@ -13,12 +13,12 @@ function FriendList({ friends }) {
           isOnline={isOnline}
         />
       ))}
-    </ul>
+    </List>
   );
 }
 
 FriendList.defaultProps = {
-  avatar: 'https://placeimg.com/48/48/people/grayscale',
+  avatar: 'https://placeimg.com/480/480/people/grayscale',
 };
 
 FriendList.propTypes = {
