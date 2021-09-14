@@ -7,8 +7,6 @@ import Profile from 'components/Profile';
 import Statistics from 'components/Statistics';
 import FriendList from 'components/FriendList';
 
-import './css/common.css';
-
 function App() {
   return (
     <Container>
