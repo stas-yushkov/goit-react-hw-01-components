@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import s from './Statistics.module.css';
 
-function Statistics({ title, stats }) {
+export default function Statistics({ title, stats }) {
   const makeColor = value => {
     const maxColor = 144;
     const someColorShift = 50;
@@ -39,5 +39,3 @@ Statistics.propTypes = {
     }),
   ).isRequired,
 };
-
-export default Statistics;

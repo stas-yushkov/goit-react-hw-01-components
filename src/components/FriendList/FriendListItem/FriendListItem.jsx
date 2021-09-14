@@ -5,7 +5,7 @@ import {
   UserName,
 } from './FriendListItem.styled.jsx';
 
-function FriendListItem({ avatar, name, isOnline }) {
+export default function FriendListItem({ avatar, name, isOnline }) {
   return (
     <ListItem className="item">
       <RoundBlob className="status" isOnline={isOnline} />
@@ -14,5 +14,3 @@ function FriendListItem({ avatar, name, isOnline }) {
     </ListItem>
   );
 }
-
-export default FriendListItem;
