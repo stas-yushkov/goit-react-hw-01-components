@@ -10,9 +10,6 @@ import FriendList from 'components/FriendList';
 function App() {
   return (
     <Container>
-      <FriendList friends={friends} />
-      <Statistics title={'upload stats'} stats={statisticalData} />
-      <Statistics stats={statisticalData} />
       <Profile
         name={name}
         tag={tag}
@@ -20,6 +17,9 @@ function App() {
         avatar={avatar}
         stats={stats}
       />
+      <Statistics title={'upload stats'} stats={statisticalData} />
+      <Statistics stats={statisticalData} />
+      <FriendList friends={friends} />
     </Container>
   );
 }
