@@ -22,6 +22,7 @@ export const Description = styled.div`
 export const Avatar = styled.img`
   border-radius: 50%;
   background-color: #bb3f6e;
+  width: 200px;
   height: 200px;
   object-fit: cover;
 `;
