@@ -1,14 +1,17 @@
 import styled from 'styled-components';
 
-export const ProfileWrapper = styled.div`
+import { colors } from 'constants/colors';
+import { randomDarkColor } from 'utils';
+
+export const ProfileWrapper = styled.section`
   display: flex;
   flex-direction: column;
   width: 400px;
   justify-content: center;
   align-items: center;
-  background-color: #fff;
+  background-color: ${colors.white};
   border-radius: 2px;
-  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: ${colors.boxShadow};
 `;
 
 export const Description = styled.div`
@@ -21,7 +24,7 @@ export const Description = styled.div`
 
 export const Avatar = styled.img`
   border-radius: 50%;
-  background-color: #bb3f6e;
+  background-color: ${randomDarkColor()};
   width: 200px;
   height: 200px;
   object-fit: cover;
@@ -35,14 +38,14 @@ export const Name = styled.p`
 `;
 
 export const Tag = styled.p`
-  color: #666;
+  color: ${colors.appSecondaryColor};
   font-size: 30px;
   text-align: center;
   line-height: 1.5;
 `;
 
 export const Location = styled.p`
-  color: #666;
+  color: ${colors.appSecondaryColor};
   font-size: 30px;
   text-align: center;
   line-height: 1.5;

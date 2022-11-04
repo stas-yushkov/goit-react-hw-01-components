@@ -1,15 +1,17 @@
 import styled from 'styled-components';
 
+import { colors } from 'constants/colors';
+
 export const StatsContainer = styled.ul`
   width: 100%;
-  background-color: #f3f6f9;
-  color: #fff;
+  background-color: ${colors.secondaryBgColor};
+  color: ${colors.white};
   list-style: none;
   display: flex;
 `;
 
 export const StatItem = styled.li`
-  background-color: ${props => props.color || '#000'};
+  background-color: ${props => props.color};
   display: flex;
   flex: 1;
   flex-direction: column;
