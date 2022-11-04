@@ -22,6 +22,7 @@ export const TableBody = styled.tbody`
 `;
 
 export const TableData = styled.td`
+  color: ${colors.appSecondaryColor};
   text-align: center;
   padding: 20px 100px;
   &:first-of-type {
