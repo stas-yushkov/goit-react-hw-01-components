@@ -1,11 +1,13 @@
 import styled from 'styled-components';
 
 import { colors } from 'constants/colors';
+import { GAP_BETWEEN_SECTIONS, CARD_WIDTH, BORDER_RADIUS } from 'constants';
 
 export const Wrapper = styled.ul`
+  margin-top: ${GAP_BETWEEN_SECTIONS};
   display: flex;
   flex-direction: column;
-  width: 400px;
+  width: ${CARD_WIDTH};
   justify-content: center;
   align-items: center;
 `;
@@ -16,7 +18,8 @@ export const Item = styled.li`
   justify-content: start;
   padding: 5px;
   background-color: ${colors.white};
-  border-radius: 2px;
+  border-radius: ${BORDER_RADIUS};
+  overflow: hidden;
   width: 100%;
   box-shadow: ${colors.boxShadow};
   margin-bottom: 10px;

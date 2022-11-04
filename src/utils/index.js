@@ -6,3 +6,5 @@ export const randomDarkColor = () => {
     ).slice(-2);
   return color;
 };
+
+export const capitalize = stringItem => `${stringItem[0].toUpperCase()}${stringItem.slice(1)}`;

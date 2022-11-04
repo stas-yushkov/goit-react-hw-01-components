@@ -1,16 +1,19 @@
 import styled from 'styled-components';
 
 import { colors } from 'constants/colors';
+import { CARD_WIDTH, BORDER_RADIUS } from 'constants';
+
 import { randomDarkColor } from 'utils';
 
 export const ProfileWrapper = styled.section`
   display: flex;
   flex-direction: column;
-  width: 400px;
+  width: ${CARD_WIDTH};
   justify-content: center;
   align-items: center;
   background-color: ${colors.white};
-  border-radius: 2px;
+  border-radius: ${BORDER_RADIUS};
+  overflow: hidden;
   box-shadow: ${colors.boxShadow};
 `;
 
